@@ -21,7 +21,7 @@ Blutgruppen für Vampire!!!
 <script>
 $(document).ready(function() {
     $.ajax({
-        url: "http://testdocker.abo.svc/greeting?name=bearbel"
+        url: "/api/v1/namespaces/abo/services/testdocker/greeting?name=bearbel"
     }).then(function(data) {
        $('.greeting-id').append(data.id);
        $('.greeting-content').append(data.content);
